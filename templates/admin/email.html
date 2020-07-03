@@ -1,0 +1,197 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+    <!-- Page Inner -->
+    <div class="page-inner">
+        <div id="main-wrapper">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="input-group email-search">
+                        <input type="text" class="form-control" placeholder="Search for an email">
+                        <span class="input-group-btn">
+                                        <button class="btn btn-primary"
+                                                type="button">Search</button>
+                                    </span>
+                    </div>
+                </div>
+            </div><!-- Row -->
+            <div class="cross-page-line"></div>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="email-actions">
+                        <a href="#" class="btn btn-primary compose">Compose</a>
+                    </div>
+                    <div class="email-menu">
+                        <ul class="list-unstyled">
+                            <li class="active"><a href="#"><i
+                                    class="icon-inbox"></i><span>Inbox</span></a></li>
+                            <li><a href="#"><i class="icon-send"></i><span>Sent</span></a></li>
+                            <li><a href="#"><i class="icon-mail_outline"></i><span>Drafts</span></a>
+                            </li>
+                            <li><a href="#"><i class="icon-error"></i><span>Spam</span></a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="icon-delete"></i><span>Trash</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="email-list">
+                        <ul class="list-unstyled">
+                            <li class="active">
+                                <a href="#">
+                                    <div class="email-list-item">
+                                        <div class="email-author">
+                                            <img src="http://via.placeholder.com/35x35" alt="">
+                                            <span class="author-name">Kenny Highland</span>
+                                            <span class="email-date">5m ago</span>
+                                        </div>
+                                        <div class="email-info">
+                                                        <span class="email-subject">
+                                                            Maecenas porttitor porta erat ac suscipit porta erat ac suscipit
+                                                        </span>
+                                            <span class="email-text">
+                                                            Vestibulum placerat imperdiet tellus, et tincidunt eros posuere eget
+                                                        </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="email-list-item">
+                                        <div class="email-author">
+                                            <img src="http://via.placeholder.com/35x35" alt="">
+                                            <span class="author-name">Darrell Price</span>
+                                            <span class="email-date">2:05pm</span>
+                                        </div>
+                                        <div class="email-info">
+                                                        <span class="email-subject">
+                                                            Fusce pretium sem sit amet consectetur dictum
+                                                        </span>
+                                            <span class="email-text">
+                                                            Suspendisse purus mauris, elementum nec ligula sed
+                                                        </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="email-list-item">
+                                        <div class="email-author">
+                                            <img src="http://via.placeholder.com/35x35" alt="">
+                                            <span class="author-name">Amy Walker</span>
+                                            <span class="email-date">28 Oct</span>
+                                        </div>
+                                        <div class="email-info">
+                                                        <span class="email-subject">
+                                                            Curabitur egestas felis dui, sed dictum lorem maximus et
+                                                        </span>
+                                            <span class="email-text">
+                                                            Ut ullamcorper elit vitae dolor cursus maximus
+                                                        </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="email-list-item">
+                                        <div class="email-author">
+                                            <img src="http://via.placeholder.com/35x35" alt="">
+                                            <span class="author-name">Kathy Olson</span>
+                                            <span class="email-date">24 Oct</span>
+                                        </div>
+                                        <div class="email-info">
+                                                        <span class="email-subject">
+                                                            Phasellus libero quam, luctus ut purus eget
+                                                        </span>
+                                            <span class="email-text">
+                                                            Fusce mollis sem nisl, eu rutrum sapien tempus in
+                                                        </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="email-list-item">
+                                        <div class="email-author">
+                                            <img src="http://via.placeholder.com/35x35" alt="">
+                                            <span class="author-name">Susan Mabry</span>
+                                            <span class="email-date">17 Oct</span>
+                                        </div>
+                                        <div class="email-info">
+                                                        <span class="email-subject">
+                                                            Class aptent taciti sociosqu ad litora torquent per conubia nostra
+                                                        </span>
+                                            <span class="email-text">
+                                                            Pellentesque pellentesque condimentum lectus eget accumsan
+                                                        </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="email-list-item">
+                                        <div class="email-author">
+                                            <img src="http://via.placeholder.com/35x35" alt="">
+                                            <span class="author-name">Richard Lunsford</span>
+                                            <span class="email-date">16 Oct</span>
+                                        </div>
+                                        <div class="email-info">
+                                                        <span class="email-subject">
+                                                            Donec aliquet felis sed ante molestie cursus
+                                                        </span>
+                                            <span class="email-text">
+                                                            Suspendisse euismod leo at enim accumsan volutpat
+                                                        </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="email-actions">
+                        <a href="#" class="btn btn-default">Reply</a>
+                        <a href="#" class="btn btn-default">Forward</a>
+                        <a href="#" class="btn btn-default">Mark as read</a>
+                        <a href="#" class="btn btn-danger">Delete</a>
+                    </div>
+                    <div class="email">
+                        <div class="email-header">
+                            <div class="email-title"><p>Maecenas porttitor porta erat ac suscipit
+                                porta erat ac suscipit</p></div>
+                            <span class="divider"></span>
+                            <div class="email-author">
+                                <img src="http://via.placeholder.com/35x35" alt="">
+                                <span class="author-name">kenny.high@ecaps.com</span>
+                                <span class="email-date">4:14pm</span>
+                            </div>
+                            <span class="divider"></span>
+                        </div>
+                        <div class="email-body">
+                                        <span>
+                                            Dear Sir/Madam,<br><br>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut ante id elit molestie ornare. Pellentesque porttitor facilisis risus, sit amet semper ante efficitur et. Etiam quis rutrum leo, vitae posuere augue. Donec odio leo, dapibus id sollicitudin vel, luctus sit amet justo. Aenean cursus, tellus ut consectetur commodo, est dolor fringilla mauris, nec tristique magna orci in diam. Cras eget libero sit amet felis tincidunt mattis.<br><br>
+                                            Waiting your reply ASAP,<br>
+                                            Thanks in advance.
+                                        </span>
+                        </div>
+                        <div class="email-reply">
+                            <div class="summernote"></div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Row -->
+        </div><!-- Main Wrapper -->
+        <div class="page-footer">
+            <p>Copyright &copy; 2018.Company name All rights reserved.<a target="_blank"
+                                                                         href="http://www.17sucai.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+            </p>
+        </div>
+    </div><!-- /Page Inner -->
+{% endblock %}

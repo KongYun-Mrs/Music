@@ -1,0 +1,6 @@
+[submodule "Music"]
+	path = Music
+	url = https://github.com/KongYun-Mrs/Music
+[submodule "Music1"]
+	path = Music1
+	url = https://github.com/KongYun-Mrs/Music

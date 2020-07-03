@@ -1,0 +1,174 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+    <!-- Page Inner -->
+    <div class="page-inner">
+        <div class="page-title">
+            <h3 class="breadcrumb-header">Chart.js</h3>
+        </div>
+
+        <div class="alert alert-default" role="alert">
+            Simple, clean and engaging charts for designers and developers.
+        </div>
+
+        <div id="main-wrapper">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-white">
+                        <div class="panel-body">
+                            <div class="panel-heading clearfix">
+                                <h4 class="panel-title">Line</h4>
+                            </div>
+                            <canvas id="chart1"></canvas>
+                        </div>
+                    </div>
+                    <div class="panel panel-white">
+                        <div class="panel-body">
+                            <div class="panel-heading clearfix">
+                                <h4 class="panel-title">Radar</h4>
+                            </div>
+                            <canvas id="chart3"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-white">
+                        <div class="panel-body">
+                            <div class="panel-heading clearfix">
+                                <h4 class="panel-title">Bar</h4>
+                            </div>
+                            <canvas id="chart2"></canvas>
+                        </div>
+                    </div>
+                    <div class="panel panel-white">
+                        <div class="panel-body">
+                            <div class="panel-heading clearfix">
+                                <h4 class="panel-title">Doughnut</h4>
+                            </div>
+                            <canvas id="chart4"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Row -->
+
+            <div class="page-title">
+                <h3 class="breadcrumb-header">NVD3</h3>
+            </div>
+
+            <div class="alert alert-default" role="alert">
+                This project is an attempt to build re-usable charts and chart components for d3.js
+                without taking away the power that d3.js gives you. This is a very young collection
+                of components, with the goal of keeping these components very customizeable, staying
+                away from your standard cookie cutter solutions.
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-white">
+                        <div class="panel-body">
+                            <div class="panel-heading clearfix">
+                                <h4 class="panel-title">Line Chart</h4>
+                            </div>
+                            <div id="nvd1">
+                                <svg></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-white">
+                        <div class="panel-body">
+                            <div class="panel-heading clearfix">
+                                <h4 class="panel-title">Group/Stacked Bar Chart</h4>
+                            </div>
+                            <div id="nvd3">
+                                <svg></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-white">
+                        <div class="panel-body">
+                            <div class="panel-heading clearfix">
+                                <h4 class="panel-title">Comulative Line Chart</h4>
+                            </div>
+                            <div id="nvd2">
+                                <svg></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-white">
+                        <div class="panel-body">
+                            <div class="panel-heading clearfix">
+                                <h4 class="panel-title">Stacked Area Chart</h4>
+                            </div>
+                            <div id="nvd4">
+                                <svg></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Row -->
+            <div class="page-title">
+                <h3 class="breadcrumb-header">Flot</h3>
+            </div>
+
+            <div class="alert alert-default" role="alert">
+                Flot is a pure JavaScript plotting library for jQuery, with a focus on simple usage,
+                attractive looks and interactive features.
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-white">
+                        <div class="panel-body">
+                            <div class="panel-heading clearfix">
+                                <h4 class="panel-title">Bar Chart</h4>
+                            </div>
+                            <div id="flot1">
+                                <svg></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-white">
+                        <div class="panel-body">
+                            <div class="panel-heading clearfix">
+                                <h4 class="panel-title">Pie Chart</h4>
+                            </div>
+                            <div id="flot3">
+                                <svg></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-white">
+                        <div class="panel-body">
+                            <div class="panel-heading clearfix">
+                                <h4 class="panel-title">Line Chart</h4>
+                            </div>
+                            <div id="flot2">
+                                <svg></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-white">
+                        <div class="panel-body">
+                            <div class="panel-heading clearfix">
+                                <h4 class="panel-title">Live Chart</h4>
+                            </div>
+                            <div id="flot4">
+                                <svg></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Row -->
+        </div><!-- Main Wrapper -->
+        <div class="page-footer">
+            <p>Copyright &copy; 2018.Company name All rights reserved.<a target="_blank"
+                                                                         href="http://www.17sucai.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+            </p>
+        </div>
+    </div><!-- /Page Inner -->
+
+{% endblock %}

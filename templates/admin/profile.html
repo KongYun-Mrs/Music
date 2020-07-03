@@ -1,0 +1,179 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+    <!-- Page Inner -->
+    <div class="page-inner no-page-title">
+        <div id="main-wrapper">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">User Profile</h4>
+                        </div>
+                        <div class="panel-body user-profile-panel">
+                            <img src="http://via.placeholder.com/100x100"
+                                 class="user-profile-image img-circle" alt="">
+                            <h4 class="text-center m-t-lg">john doe</h4>
+                            <p class="text-center">UI/UX Designer</p>
+                            <hr>
+                            <ul class="list-unstyled text-center">
+                                <li><p><i class="fa fa-map-marker m-r-xs"></i>Melbourne, Australia
+                                </p></li>
+                                <li><p><i class="fa fa-paper-plane-o m-r-xs"></i><a href="#">example@mail.com</a>
+                                </p></li>
+                            </ul>
+                            <hr>
+                            <button class="btn btn-info btn-block">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-white">
+                        <div class="panel-body">
+                            <div class="post">
+                                <textarea class="form-control" placeholder="Post"
+                                          rows="4"></textarea>
+                                <div class="post-options">
+                                    <a href="#"><i class="fa fa-camera"></i></a>
+                                    <a href="#"><i class="fa fa-video-camera"></i></a>
+                                    <a href="#"><i class="fa fa-music"></i></a>
+                                    <button class="btn btn-default pull-right">Post</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-timeline">
+                        <ul class="list-unstyled">
+                            <li class="timeline-item">
+                                <div class="panel panel-white">
+                                    <div class="panel-body">
+                                        <div class="timeline-item-header">
+                                            <img src="http://via.placeholder.com/40x40" alt="">
+                                            <p>jack smith <span>posted a status</span></p>
+                                            <small>3 hours ago</small>
+                                        </div>
+                                        <div class="timeline-item-post">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit. Etiam porttitor mi eget laoreet auctor. Proin
+                                                dictum nulla id augue aliquam, vitae condimentum
+                                                erat imperdiet</p>
+                                            <div class="timeline-options">
+                                                <a href="#"><i class="fa fa-thumbs-up"></i> Like (7)</a>
+                                                <a href="#"><i class="fa fa-comment"></i> Comment
+                                                    (2)</a>
+                                                <a href="#"><i class="fa fa-share"></i> Share
+                                                    (3)</a>
+                                            </div>
+                                            <div class="timeline-comment">
+                                                <div class="timeline-comment-header">
+                                                    <img src="http://via.placeholder.com/30x30"
+                                                         alt="">
+                                                    <p>ethan green
+                                                        <small>1 hour ago</small>
+                                                    </p>
+                                                </div>
+                                                <p class="timeline-comment-text">Aenean tincidunt mi
+                                                    ut leo auctor, eleifend molestie erat
+                                                    vulputate</p>
+                                            </div>
+                                            <div class="timeline-comment">
+                                                <div class="timeline-comment-header">
+                                                    <img src="http://via.placeholder.com/30x30"
+                                                         alt="">
+                                                    <p>john doe
+                                                        <small>3 hours ago</small>
+                                                    </p>
+                                                </div>
+                                                <p class="timeline-comment-text">Nam non libero sem.
+                                                    Nullam commodo tellus quis massa pulvinar, sed
+                                                    blandit tortor tincidunt. Nulla consequat at
+                                                    nisi sit amet consectetur</p>
+                                            </div>
+                                            <textarea class="form-control"
+                                                      placeholder="Replay"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="panel panel-white">
+                                    <div class="panel-body">
+                                        <div class="timeline-item-header">
+                                            <img src="http://via.placeholder.com/40x40" alt="">
+                                            <p>david smith <span>uploaded a photo</span></p>
+                                            <small>7 hours ago</small>
+                                        </div>
+                                        <div class="timeline-item-post">
+                                            <p>Aenean ante nunc, eleifend eget hendrerit eget</p>
+                                            <img src="http://via.placeholder.com/500x300" alt="">
+                                            <div class="timeline-options">
+                                                <a href="#"><i class="fa fa-thumbs-up"></i> Like
+                                                    (12)</a>
+                                                <a href="#"><i class="fa fa-comment"></i> Comment
+                                                    (1)</a>
+                                                <a href="#"><i class="fa fa-share"></i> Share
+                                                    (6)</a>
+                                            </div>
+                                            <div class="timeline-comment">
+                                                <div class="timeline-comment-header">
+                                                    <img src="http://via.placeholder.com/30x30"
+                                                         alt="">
+                                                    <p>noah smith
+                                                        <small>1 hour ago</small>
+                                                    </p>
+                                                </div>
+                                                <p class="timeline-comment-text">Cras tempor pretium
+                                                    lorem, quis suscipit ipsum</p>
+                                            </div>
+                                            <textarea class="form-control"
+                                                      placeholder="Replay"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">Suggestions</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="team">
+                                <div class="team-member">
+                                    <div class="online on"></div>
+                                    <img src="http://via.placeholder.com/40x40" alt="">
+                                </div>
+                                <div class="team-member">
+                                    <div class="online on"></div>
+                                    <img src="http://via.placeholder.com/40x40" alt="">
+                                </div>
+                                <div class="team-member">
+                                    <div class="online off"></div>
+                                    <img src="http://via.placeholder.com/40x40" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">Some Info</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Integer tincidunt varius nulla, vitae facilisis nibh ornare
+                                dignissim. Morbi in orci vitae magna vestibulum placerat at vel
+                                augue. Pellentesque rutrum ipsum eget odio</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Row -->
+        </div><!-- Main Wrapper -->
+        <div class="page-footer">
+            <p>Copyright &copy; 2018.Company name All rights reserved.<a target="_blank"
+                                                                         href="http://www.17sucai.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+            </p>
+        </div>
+    </div><!-- /Page Inner -->
+{% endblock %}

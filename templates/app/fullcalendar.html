@@ -1,0 +1,83 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+    <section id="content">
+                <section class="vbox">
+                    <section class="scrollable">
+                        <section class="hbox">
+                            <!-- .aside -->
+                            <aside class="aside-lg bg-light dker wrapper">
+                                <div id="myEvents" class="panel b-a bg-light">
+                                    <div class="panel-heading bg-white">
+                                        Dragable events
+                                    </div>
+                                    <ul class="list-unstyled wrapper m-b-none">
+                                        <li class="m-b-xxs">
+                                            <div class="r bg-white b-l b-2x b-info wrapper-xxs">
+                                                Meet a friend
+                                            </div>
+                                        </li>
+                                        <li class="m-b-xxs">
+                                            <div class="r bg-white b-l b-2x b-danger wrapper-xxs">
+                                                Tom's birthday
+                                            </div>
+                                        </li>
+                                        <li class="m-b-xxs">
+                                            <div class="r bg-white b-l b-2x b-primary wrapper-xxs">
+                                                Feed cat
+                                            </div>
+                                        </li>
+                                        <li class="m-b-xxs">
+                                            <div class="r bg-white b-l b-2x b-warning wrapper-xxs">
+                                                Sports
+                                            </div>
+                                        </li>
+                                        <li class="m-b-xxs">
+                                            <div class="r bg-primary bg wrapper-xxs">
+                                                Tom's birthday
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="checkbox">
+                                    <label class="i-checks"><input type='checkbox' checked
+                                                                   id='drop-remove'/><i></i> remove
+                                        after drop</label>
+                                </div>
+                            </aside>
+                            <!-- /.aside -->
+                            <!-- .aside -->
+                            <aside class="wrapper">
+                                <section class="panel no-border bg-light">
+                                    <header class="panel-heading bg-primary clearfix">
+                                        <div class="btn-group pull-right" data-toggle="buttons">
+                                            <label class="btn btn-sm btn-bg btn-default active"
+                                                   id="monthview">
+                                                <input type="radio" name="options">Month
+                                            </label>
+                                            <label class="btn btn-sm btn-bg btn-default"
+                                                   id="weekview">
+                                                <input type="radio" name="options">Week
+                                            </label>
+                                            <label class="btn btn-sm btn-bg btn-default"
+                                                   id="dayview">
+                                                <input type="radio" name="options">Day
+                                            </label>
+                                        </div>
+                                        <span class="m-t-xs inline text-white">
+                          Fullcalendar
+                        </span>
+                                    </header>
+                                    <div class="calendar" id="calendar">
+
+                                    </div>
+                                </section>
+                            </aside>
+                            <!-- /.aside -->
+                        </section>
+                    </section>
+                </section>
+                <a href="#" class="hide nav-off-screen-block"
+                   data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
+            </section>
+{% endblock %}

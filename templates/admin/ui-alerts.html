@@ -1,0 +1,145 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+    <!-- Page Inner -->
+    <div class="page-inner">
+        <div class="page-title">
+            <h3 class="breadcrumb-header">Alerts</h3>
+        </div>
+        <div id="main-wrapper">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">Default alerts</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="alert alert-default" role="alert">
+                                Nothing important, this is just a simple alert message.
+                            </div>
+                            <div class="alert alert-success" role="alert">
+                                Well done! You successfully read this important alert message.
+                            </div>
+                            <div class="alert alert-info" role="alert">
+                                Heads up! This alert needs your attention, but it's not super
+                                important.
+                            </div>
+                            <div class="alert alert-warning" role="alert">
+                                Warning! Better check yourself, you're not looking too good.
+                            </div>
+                            <div class="alert alert-danger" role="alert" style="margin-bottom:0;">
+                                Oh snap! Change a few things up and try submitting again.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">Links in alerts</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="alert alert-default" role="alert">
+                                Nothing important, this is just a <a href="#" class="alert-link">simple
+                                alert message</a>.
+                            </div>
+                            <div class="alert alert-success" role="alert">
+                                <strong>Well done!</strong> You successfully read <a href="#"
+                                                                                     class="alert-link">this
+                                important alert message</a>.
+                            </div>
+                            <div class="alert alert-info" role="alert">
+                                <strong>Heads up!</strong> This <a href="#" class="alert-link">alert
+                                needs your attention</a>, but it's not super important.
+                            </div>
+                            <div class="alert alert-warning" role="alert">
+                                <strong>Warning!</strong> Better check yourself, you're <a href="#"
+                                                                                           class="alert-link">not
+                                looking too good</a>.
+                            </div>
+                            <div class="alert alert-danger" role="alert" style="margin-bottom:0;">
+                                <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a
+                                few things up</a> and try submitting again.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">Dismissible alerts</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="alert alert-default alert-dismissible" role="alert">
+                                <button type="button" class="close" data-dismiss="alert"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                Nothing important, this is just a simple alert message.
+                            </div>
+                            <div class="alert alert-success alert-dismissible" role="alert">
+                                <button type="button" class="close" data-dismiss="alert"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                Well done! You successfully read this important alert message.
+                            </div>
+                            <div class="alert alert-info alert-dismissible" role="alert">
+                                <button type="button" class="close" data-dismiss="alert"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                Heads up! This alert needs your attention, but it's not super
+                                important.
+                            </div>
+                            <div class="alert alert-warning alert-dismissible" role="alert">
+                                <button type="button" class="close" data-dismiss="alert"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                Warning! Better check yourself, you're not looking too good.
+                            </div>
+                            <div class="alert alert-danger alert-dismissible" role="alert"
+                                 style="margin-bottom:0;">
+                                <button type="button" class="close" data-dismiss="alert"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                Oh snap! Change a few things up and try submitting again.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-white" id="js-alerts">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">Alert messages
+                                <small>alert.js</small>
+                            </h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="alert alert-warning alert-dismissible fade in" role="alert">
+                                <button type="button" class="close" data-dismiss="alert"
+                                        aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <strong>Holy guacamole!</strong> Best check yo self, you're not
+                                looking too good.
+                            </div>
+                            <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                                <button type="button" class="close" data-dismiss="alert"
+                                        aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4>Oh snap! You got an error!</h4>
+                                <p>Change this and that and try again. Duis mollis, est non commodo
+                                    luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
+                                    elit. Cras mattis consectetur purus sit amet fermentum.</p>
+                                <p>
+                                    <button type="button" class="btn btn-primary">Take this action
+                                    </button>
+                                    <button type="button" class="btn btn-default">Or do this
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Row -->
+        </div><!-- Main Wrapper -->
+        <div class="page-footer">
+            <p>Copyright &copy; 2018.Company name All rights reserved.<a target="_blank"
+                                                                         href="http://www.17sucai.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+            </p>
+        </div>
+    </div><!-- /Page Inner -->
+{% endblock %}

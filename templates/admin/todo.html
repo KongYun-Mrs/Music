@@ -1,0 +1,76 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+    <!-- Page Inner -->
+    <div class="page-inner">
+        <div class="page-title">
+            <h3 class="breadcrumb-header">Todo</h3>
+        </div>
+        <div id="main-wrapper">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-white">
+                        <div class="panel-body">
+                            <form action="javascript:void(0);">
+                                <input type="text" class="form-control add-task"
+                                       placeholder="New Task...">
+                            </form>
+                            <ul class="nav nav-pills todo-nav">
+                                <li role="presentation" class="active all-task"><a href="#">All</a>
+                                </li>
+                                <li role="presentation" class="active-task"><a href="#">Active</a>
+                                </li>
+                                <li role="presentation" class="completed-task"><a
+                                        href="#">Completed</a></li>
+                            </ul>
+                            <div class="todo-list">
+                                <div class="todo-item">
+                                    <input type="checkbox">
+                                    <span>Go Shopping</span>
+                                    <a href="javascript:void(0);"
+                                       class="pull-right remove-todo-item"><i
+                                            class="icon-close"></i></a>
+                                </div>
+                                <div class="todo-item">
+                                    <input type="checkbox">
+                                    <span>Create new Wordpress Theme</span>
+                                    <a href="javascript:void(0);"
+                                       class="pull-right remove-todo-item"><i
+                                            class="icon-close"></i></a>
+                                </div>
+                                <div class="todo-item complete">
+                                    <input type="checkbox" checked>
+                                    <span>Change slider style</span>
+                                    <a href="javascript:void(0);"
+                                       class="pull-right remove-todo-item"><i
+                                            class="icon-close"></i></a>
+                                </div>
+                                <div class="todo-item complete">
+                                    <input type="checkbox" checked>
+                                    <span>Fronted Theme</span>
+                                    <a href="javascript:void(0);"
+                                       class="pull-right remove-todo-item"><i
+                                            class="icon-close"></i></a>
+                                </div>
+                                <div class="todo-item">
+                                    <input type="checkbox">
+                                    <span>Learn C# programming language</span>
+                                    <a href="javascript:void(0);"
+                                       class="pull-right remove-todo-item"><i
+                                            class="icon-close"></i></a>
+                                </div>
+                            </div>
+                            <input type="checkbox" id="all-complete">
+                            <span>Mark all as complete</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Row -->
+        </div><!-- Main Wrapper -->
+        <div class="page-footer">
+            <p>Copyright &copy; 2018.Company name All rights reserved.<a target="_blank"
+                                                                         href="http://www.17sucai.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+            </p>
+        </div>
+    </div><!-- /Page Inner -->
+{% endblock %}

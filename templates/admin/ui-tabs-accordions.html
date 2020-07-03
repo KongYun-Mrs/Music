@@ -1,0 +1,522 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+    <!-- Page Inner -->
+    <div class="page-inner">
+        <div class="page-title">
+            <h3 class="breadcrumb-header">Tabs &amp; Accordions</h3>
+        </div>
+        <div id="main-wrapper">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">Default Tabs</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div role="tabpanel">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#tab1"
+                                                                              role="tab"
+                                                                              data-toggle="tab">Tab
+                                        1</a></li>
+                                    <li role="presentation"><a href="#tab2" role="tab"
+                                                               data-toggle="tab">Tab 2</a></li>
+                                    <li role="presentation"><a href="#tab3" role="tab"
+                                                               data-toggle="tab">Tab 3</a></li>
+                                    <li role="presentation"><a href="#tab4" role="tab"
+                                                               data-toggle="tab">Tab 4</a></li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="tab1">
+                                        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum
+                                            sociis natoque penatibus et magnis dis parturient
+                                            montes, nascetur ridiculus mus. Nullam id dolor id nibh
+                                            ultricies vehicula.</p>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="tab2">
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                            Aenean commodo ligula eget dolor. Aenean massa. Cum
+                                            sociis natoque penatibus et magnis dis parturient
+                                            montes, nascetur ridiculus mus.</p>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="tab3">
+                                        <p>Donec quam felis, ultricies nec, pellentesque eu, pretium
+                                            quis, sem. Nulla consequat massa quis enim. Donec pede
+                                            justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                                            In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                                            justo.</p>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="tab4">
+                                        <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum
+                                            rhoncus, sem quam semper libero, sit amet adipiscing sem
+                                            neque sed ipsum. Nam quam nunc, blandit vel, luctus
+                                            pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                                            tincidunt tempus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">Left Tabs</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="tabs-left" role="tabpanel">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#tab9"
+                                                                              role="tab"
+                                                                              data-toggle="tab">Tab
+                                        1</a></li>
+                                    <li role="presentation"><a href="#tab10" role="tab"
+                                                               data-toggle="tab">Tab 2</a></li>
+                                    <li role="presentation"><a href="#tab11" role="tab"
+                                                               data-toggle="tab">Tab 3</a></li>
+                                    <li role="presentation"><a href="#tab12" role="tab"
+                                                               data-toggle="tab">Tab 4</a></li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active fade in" id="tab9">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitat.</p>
+
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab10">
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                            Aenean commodo ligula eget dolor. Aenean massa. Cum
+                                            sociis natoque penatibus et magnis dis parturient
+                                            montes, nascetur ridiculus mus.</p>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab11">
+                                        <p>Donec quam felis, ultricies nec, pellentesque eu, pretium
+                                            quis, sem. Nulla consequat massa quis enim. Donec pede
+                                            justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                                            In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                                            justo.</p>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab12">
+                                        <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum
+                                            rhoncus, sem quam semper libero, sit amet adipiscing sem
+                                            neque sed ipsum. Nam quam nunc, blandit vel, luctus
+                                            pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                                            tincidunt tempus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">Pills</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div role="tabpanel">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-pills" role="tablist">
+                                    <li role="presentation" class="active"><a href="#tab25"
+                                                                              role="tab"
+                                                                              data-toggle="tab">Tab
+                                        1</a></li>
+                                    <li role="presentation"><a href="#tab26" role="tab"
+                                                               data-toggle="tab">Tab 2</a></li>
+                                    <li role="presentation"><a href="#tab27" role="tab"
+                                                               data-toggle="tab">Tab 3</a></li>
+                                    <li role="presentation"><a href="#tab28" role="tab"
+                                                               data-toggle="tab">Tab 4</a></li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active fade in" id="tab25">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitat.</p>
+
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab26">
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                            Aenean commodo ligula eget dolor. Aenean massa. Cum
+                                            sociis natoque penatibus et magnis dis parturient
+                                            montes, nascetur ridiculus mus.</p>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab27">
+                                        <p>Donec quam felis, ultricies nec, pellentesque eu, pretium
+                                            quis, sem. Nulla consequat massa quis enim. Donec pede
+                                            justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                                            In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                                            justo.</p>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab28">
+                                        <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum
+                                            rhoncus, sem quam semper libero, sit amet adipiscing sem
+                                            neque sed ipsum. Nam quam nunc, blandit vel, luctus
+                                            pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                                            tincidunt tempus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">Accordion</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-group" id="accordion" role="tablist"
+                                 aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion"
+                                               href="#collapseOne" aria-expanded="true"
+                                               aria-controls="collapseOne">
+                                                Collapsible Group Item #1
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in"
+                                         role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high
+                                            life accusamus terry richardson ad squid. 3 wolf moon
+                                            officia aute, non cupidatat skateboard dolor brunch.
+                                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                                            wolf moon tempor, sunt aliqua put a bird on it squid
+                                            single-origin coffee nulla assumenda shoreditch et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes
+                                            anderson cred nesciunt sapiente ea proident. Ad vegan
+                                            excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer farm-to-table, raw denim aesthetic synth nesciunt
+                                            you probably haven't heard of them accusamus labore
+                                            sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse"
+                                               data-parent="#accordion" href="#collapseTwo"
+                                               aria-expanded="false" aria-controls="collapseTwo">
+                                                Collapsible Group Item #2
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse"
+                                         role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high
+                                            life accusamus terry richardson ad squid. 3 wolf moon
+                                            officia aute, non cupidatat skateboard dolor brunch.
+                                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                                            wolf moon tempor, sunt aliqua put a bird on it squid
+                                            single-origin coffee nulla assumenda shoreditch et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes
+                                            anderson cred nesciunt sapiente ea proident. Ad vegan
+                                            excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer farm-to-table, raw denim aesthetic synth nesciunt
+                                            you probably haven't heard of them accusamus labore
+                                            sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThree">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse"
+                                               data-parent="#accordion" href="#collapseThree"
+                                               aria-expanded="false" aria-controls="collapseThree">
+                                                Collapsible Group Item #3
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse"
+                                         role="tabpanel" aria-labelledby="headingThree">
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high
+                                            life accusamus terry richardson ad squid. 3 wolf moon
+                                            officia aute, non cupidatat skateboard dolor brunch.
+                                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                                            wolf moon tempor, sunt aliqua put a bird on it squid
+                                            single-origin coffee nulla assumenda shoreditch et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes
+                                            anderson cred nesciunt sapiente ea proident. Ad vegan
+                                            excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer farm-to-table, raw denim aesthetic synth nesciunt
+                                            you probably haven't heard of them accusamus labore
+                                            sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">Fade Effect</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div role="tabpanel">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#tab5"
+                                                                              role="tab"
+                                                                              data-toggle="tab">Tab
+                                        1</a></li>
+                                    <li role="presentation"><a href="#tab6" role="tab"
+                                                               data-toggle="tab">Tab 2</a></li>
+                                    <li role="presentation"><a href="#tab7" role="tab"
+                                                               data-toggle="tab">Tab 3</a></li>
+                                    <li role="presentation"><a href="#tab8" role="tab"
+                                                               data-toggle="tab">Tab 4</a></li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active fade in" id="tab5">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitat.</p>
+
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab6">
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                            Aenean commodo ligula eget dolor. Aenean massa. Cum
+                                            sociis natoque penatibus et magnis dis parturient
+                                            montes, nascetur ridiculus mus.</p>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab7">
+                                        <p>Donec quam felis, ultricies nec, pellentesque eu, pretium
+                                            quis, sem. Nulla consequat massa quis enim. Donec pede
+                                            justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                                            In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                                            justo.</p>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab8">
+                                        <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum
+                                            rhoncus, sem quam semper libero, sit amet adipiscing sem
+                                            neque sed ipsum. Nam quam nunc, blandit vel, luctus
+                                            pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                                            tincidunt tempus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">Right Tabs</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="tabs-right" role="tabpanel">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#tab13"
+                                                                              role="tab"
+                                                                              data-toggle="tab">Tab
+                                        1</a></li>
+                                    <li role="presentation"><a href="#tab14" role="tab"
+                                                               data-toggle="tab">Tab 2</a></li>
+                                    <li role="presentation"><a href="#tab15" role="tab"
+                                                               data-toggle="tab">Tab 3</a></li>
+                                    <li role="presentation"><a href="#tab16" role="tab"
+                                                               data-toggle="tab">Tab 4</a></li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active fade in" id="tab13">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitat.</p>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab14">
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                            Aenean commodo ligula eget dolor. Aenean massa. Cum
+                                            sociis natoque penatibus et magnis dis parturient
+                                            montes, nascetur ridiculus mus.</p>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab15">
+                                        <p>Donec quam felis, ultricies nec, pellentesque eu, pretium
+                                            quis, sem. Nulla consequat massa quis enim. Donec pede
+                                            justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                                            In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                                            justo.</p>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab16">
+                                        <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum
+                                            rhoncus, sem quam semper libero, sit amet adipiscing sem
+                                            neque sed ipsum. Nam quam nunc, blandit vel, luctus
+                                            pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                                            tincidunt tempus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">Justified Tabs</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div role="tabpanel">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs nav-justified" role="tablist">
+                                    <li role="presentation" class="active"><a href="#tab21"
+                                                                              role="tab"
+                                                                              data-toggle="tab">Tab
+                                        1</a></li>
+                                    <li role="presentation"><a href="#tab22" role="tab"
+                                                               data-toggle="tab">Tab 2</a></li>
+                                    <li role="presentation"><a href="#tab23" role="tab"
+                                                               data-toggle="tab">Tab 3</a></li>
+                                    <li role="presentation"><a href="#tab24" role="tab"
+                                                               data-toggle="tab">Tab 4</a></li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active fade in" id="tab21">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitat.</p>
+
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab22">
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                            Aenean commodo ligula eget dolor. Aenean massa. Cum
+                                            sociis natoque penatibus et magnis dis parturient
+                                            montes, nascetur ridiculus mus.</p>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab23">
+                                        <p>Donec quam felis, ultricies nec, pellentesque eu, pretium
+                                            quis, sem. Nulla consequat massa quis enim. Donec pede
+                                            justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                                            In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                                            justo.</p>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab24">
+                                        <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum
+                                            rhoncus, sem quam semper libero, sit amet adipiscing sem
+                                            neque sed ipsum. Nam quam nunc, blandit vel, luctus
+                                            pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                                            tincidunt tempus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">Color Options</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-group" id="accordion2" role="tablist"
+                                 aria-multiselectable="true">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading" role="tab" id="headingOne1">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion2"
+                                               href="#1" aria-expanded="true"
+                                               aria-controls="collapseOne">
+                                                Collapsible Group Item #1
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="1" class="panel-collapse collapse in" role="tabpanel"
+                                         aria-labelledby="headingOne1">
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high
+                                            life accusamus terry richardson ad squid. 3 wolf moon
+                                            officia aute, non cupidatat skateboard dolor brunch.
+                                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                                            wolf moon tempor, sunt aliqua put a bird on it squid
+                                            single-origin coffee nulla assumenda shoreditch et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes
+                                            anderson cred nesciunt sapiente ea proident. Ad vegan
+                                            excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer farm-to-table, raw denim aesthetic synth nesciunt
+                                            you probably haven't heard of them accusamus labore
+                                            sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-success">
+                                    <div class="panel-heading" role="tab" id="headingTwo2">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse"
+                                               data-parent="#accordion2" href="#2"
+                                               aria-expanded="false" aria-controls="collapseTwo">
+                                                Collapsible Group Item #2
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="2" class="panel-collapse collapse" role="tabpanel"
+                                         aria-labelledby="headingTwo2">
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high
+                                            life accusamus terry richardson ad squid. 3 wolf moon
+                                            officia aute, non cupidatat skateboard dolor brunch.
+                                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                                            wolf moon tempor, sunt aliqua put a bird on it squid
+                                            single-origin coffee nulla assumenda shoreditch et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes
+                                            anderson cred nesciunt sapiente ea proident. Ad vegan
+                                            excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer farm-to-table, raw denim aesthetic synth nesciunt
+                                            you probably haven't heard of them accusamus labore
+                                            sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-danger">
+                                    <div class="panel-heading" role="tab" id="headingThree3">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse"
+                                               data-parent="#accordion2" href="#3"
+                                               aria-expanded="false" aria-controls="collapseThree">
+                                                Collapsible Group Item #3
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="3" class="panel-collapse collapse" role="tabpanel"
+                                         aria-labelledby="headingThree3">
+                                        <div class="panel-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high
+                                            life accusamus terry richardson ad squid. 3 wolf moon
+                                            officia aute, non cupidatat skateboard dolor brunch.
+                                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3
+                                            wolf moon tempor, sunt aliqua put a bird on it squid
+                                            single-origin coffee nulla assumenda shoreditch et.
+                                            Nihil anim keffiyeh helvetica, craft beer labore wes
+                                            anderson cred nesciunt sapiente ea proident. Ad vegan
+                                            excepteur butcher vice lomo. Leggings occaecat craft
+                                            beer farm-to-table, raw denim aesthetic synth nesciunt
+                                            you probably haven't heard of them accusamus labore
+                                            sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Row -->
+        </div><!-- Main Wrapper -->
+        <div class="page-footer">
+            <p>Copyright &copy; 2018.Company name All rights reserved.<a target="_blank"
+                                                                         href="http://www.17sucai.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+            </p>
+        </div>
+    </div><!-- /Page Inner -->
+{% endblock %}

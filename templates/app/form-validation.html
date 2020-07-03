@@ -1,0 +1,284 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+    <section id="content">
+          <section class="vbox">
+            <section class="scrollable padder">
+              <div class="m-b-md">
+                <h3 class="m-b-none">用户信息</h3>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <form enctype="multipart/form-data" action="{{ url ('app:modify_infor') }}" method="post">
+                      <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+                    <section class="panel panel-default">
+                      <header class="panel-heading">
+                        <span class="h4">注册信息</span>
+                      </header>
+                      <div class="panel-body">
+                        <p class="text-muted">Please fill the information to continue</p>
+                        <div class="form-group">
+                          <label>用户名</label>
+                            {% if user1 %}
+                                 {{ user1.username }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                          <label>邮件</label>
+                          <input type="text" class="form-control"  name="email" value="
+                            {% if user1 %}
+                                {{ user1.email }}
+                            {% endif %}">
+                        </div>
+                        <div class="form-group pull-in clearfix">
+                        </div>
+                        <div class="form-group">
+                          <label>手机号</label>
+                          <input type="text" class="form-control" name="phone" value="
+                            {% if user1 %}
+                                {{ user1.phone }}
+                            {% endif %}">
+                        </div>
+                          <div class="form-group">
+                          <label>修改头像</label>
+                          <input type="file"  name="photo" >
+                        </div>
+                        <div class="checkbox i-checks">
+                          <label>
+                            <input type="checkbox" name="check" checked data-required="true"><i></i> I agree to the <a href="#" class="text-info">Terms of Service</a>
+                          </label>
+                        </div>
+                      </div>
+                      <footer class="panel-footer text-right bg-light lter">
+                        <button type="submit" class="btn btn-success btn-s-xs">Submit</button>
+                      </footer>
+                    </section>
+                  </form>
+                </div>
+                <div class="col-sm-6">
+                  <form method="post" action="{{ url('app:user_response') }}">
+                      <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+                    <section class="panel panel-default">
+                      <header class="panel-heading">
+                        <span class="h4">用户反馈</span>
+                      </header>
+                      <div class="panel-body">
+                        <p class="text-muted">Need support? please fill the fields below.</p>
+                          <div class="form-group pull-in clearfix">
+                            <div class="col-sm-6">
+                              <label>用户名</label>
+                              <input type="text" class="form-control" placeholder="Name" data-required="true" name="name">
+                            </div>
+                            <div class="col-sm-6">
+                              <label>邮件</label>
+                              <input type="email" class="form-control" placeholder="Enter email" data-required="true" name="mail">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label>主题</label>
+                            <input type="text" data-type="url"  data-required="true" class="form-control" placeholder="Your topic" name="topic">
+                          </div>
+                          <div class="form-group">
+                            <label>建议</label>
+                            <textarea class="form-control" rows="6" data-minwords="6" data-required="true" placeholder="Type your message" name="suggestion"></textarea>
+                          </div>
+                      </div>
+                      <footer class="panel-footer text-right bg-light lter">
+                        <button type="submit" class="btn btn-success btn-s-xs">Submit</button>
+                      </footer>
+                    </section>
+                  </form>
+                </div>
+              </div>
+
+{#              <div class="row">#}
+{#                <div class="col-sm-6">#}
+{#                  <form class="form-horizontal" data-validate="parsley">#}
+{#                    <section class="panel panel-default">#}
+{#                      <header class="panel-heading">#}
+{#                        <strong>Basic constraints</strong>#}
+{#                      </header>#}
+{#                      <div class="panel-body">#}
+{#                        <div class="form-group">#}
+{#                          <label class="col-sm-3 control-label">Required</label>#}
+{#                          <div class="col-sm-9">#}
+{#                            <input type="text" class="form-control" data-required="true" placeholder="required field">#}
+{#                            <select data-required="true" class="form-control m-t">#}
+{#                                <option value="">Please choose</option>#}
+{#                                <option value="foo">Foo</option>#}
+{#                                <option value="bar">Bar</option>#}
+{#                            </select>#}
+{#                            <label class="checkbox i-checks">#}
+{#                              <input type="checkbox" name="inlineCheckbox1" value="option1" data-required="true" data-error-message="You must agree to the site policy."><i></i> Agree to the policy#}
+{#                            </label>#}
+{#                          </div>#}
+{#                        </div>#}
+{#                        <div class="line line-dashed b-b line-lg pull-in"></div>#}
+{#                        <div class="form-group">#}
+{#                          <label class="col-sm-3 control-label">Not blank</label>#}
+{#                          <div class="col-sm-9">#}
+{#                            <input type="text" data-notblank="true" class="form-control" placeholder="not blank field">#}
+{#                          </div>#}
+{#                        </div>#}
+{#                        <div class="line line-dashed b-b line-lg pull-in"></div>#}
+{#                        <div class="form-group">#}
+{#                          <label class="col-sm-3 control-label">Min Length</label>#}
+{#                          <div class="col-sm-9">#}
+{#                            <input type="text" data-minlength="6" class="form-control" placeholder="minlength = 6">#}
+{#                          </div>#}
+{#                        </div>#}
+{#                        <div class="line line-dashed b-b line-lg pull-in"></div>#}
+{#                        <div class="form-group">#}
+{#                          <label class="col-sm-3 control-label">Max Length</label>#}
+{#                          <div class="col-sm-9">#}
+{#                            <input type="text" data-maxlength="6" class="form-control" placeholder="maxlength = 6">#}
+{#                          </div>#}
+{#                        </div>#}
+{#                        <div class="line line-dashed b-b line-lg pull-in"></div>#}
+{#                        <div class="form-group">#}
+{#                          <label class="col-sm-3 control-label">Range Length</label>#}
+{#                          <div class="col-sm-9">#}
+{#                            <input type="text" data-rangelength="[5,10]" class="form-control" placeholder="data-rangelength = [5,10]">#}
+{#                          </div>#}
+{#                        </div>#}
+{#                        <div class="line line-dashed b-b line-lg pull-in"></div>#}
+{#                        <div class="form-group">#}
+{#                          <label class="col-sm-3 control-label">Min</label>#}
+{#                          <div class="col-sm-9">#}
+{#                            <input type="text" data-min="6" class="form-control" placeholder="min = 6">#}
+{#                          </div>#}
+{#                        </div>#}
+{#                        <div class="line line-dashed b-b line-lg pull-in"></div>#}
+{#                        <div class="form-group">#}
+{#                          <label class="col-sm-3 control-label">Max</label>#}
+{#                          <div class="col-sm-9">#}
+{#                            <input type="text" data-max="100" class="form-control" placeholder="max = 100">#}
+{#                          </div>#}
+{#                        </div>#}
+{#                        <div class="line line-dashed b-b line-lg pull-in"></div>#}
+{#                        <div class="form-group">#}
+{#                          <label class="col-sm-3 control-label">Range</label>#}
+{#                          <div class="col-sm-9">#}
+{#                            <input type="text" data-range="[6, 100]" class="form-control" placeholder="data-range = [6, 100]">#}
+{#                          </div>#}
+{#                        </div>#}
+{#                        <div class="line line-dashed b-b line-lg pull-in"></div>#}
+{#                        <div class="form-group">#}
+{#                          <label class="col-sm-3 control-label">RegExp</label>#}
+{#                          <div class="col-sm-9">#}
+{#                            <input type="text" data-regexp="#[A-Fa-f0-9]{6}" class="form-control" placeholder="hexa color code">#}
+{#                          </div>#}
+{#                        </div>#}
+{#                        <div class="line line-dashed b-b line-lg pull-in"></div>#}
+{#                        <div class="form-group">#}
+{#                          <label class="col-sm-3 control-label">Equal To</label>#}
+{#                          <div class="col-sm-9">#}
+{#                            <div class="row">#}
+{#                              <div class="col-sm-6"><input type="text" value="foo" id="foo" class="form-control"></div>#}
+{#                              <div class="col-sm-6"><input type="text" data-equalto="#foo" placeholder="equal to foo" class="form-control"></div>#}
+{#                            </div>#}
+{#                          </div>#}
+{#                        </div>#}
+{#                      </div>#}
+{#                      <footer class="panel-footer text-right bg-light lter">#}
+{#                        <button type="submit" class="btn btn-success btn-s-xs">Submit</button>#}
+{#                      </footer>#}
+{#                    </section>#}
+{#                  </form>#}
+{#                </div>#}
+{#                <div class="col-sm-6">#}
+{#                  <form class="form-horizontal" data-validate="parsley">#}
+{#                    <section class="panel panel-default">#}
+{#                      <header class="panel-heading">#}
+{#                        <strong>Type constraints</strong>#}
+{#                      </header>#}
+{#                      <div class="panel-body">#}
+{#                        <div class="form-group">#}
+{#                          <label class="col-sm-3 control-label">Email</label>#}
+{#                          <div class="col-sm-9">#}
+{#                            <input type="text" class="form-control" data-type="email" data-required="true" placeholder="email">#}
+{#                          </div>#}
+{#                        </div>#}
+{#                        <div class="line line-dashed b-b line-lg pull-in"></div>#}
+{#                        <div class="form-group">#}
+{#                          <label class="col-sm-3 control-label">Url</label>#}
+{#                          <div class="col-sm-9">#}
+{#                            <input type="text" data-type="url" class="form-control" placeholder="url">#}
+{#                          </div>#}
+{#                        </div>#}
+{#                        <div class="line line-dashed b-b line-lg pull-in"></div>#}
+{#                        <div class="form-group">#}
+{#                          <label class="col-sm-3 control-label">Url strict</label>#}
+{#                          <div class="col-sm-9">#}
+{#                            <input type="text" data-type="urlstrict" class="form-control" placeholder="urlstrict">#}
+{#                          </div>#}
+{#                        </div>#}
+{#                        <div class="line line-dashed b-b line-lg pull-in"></div>#}
+{#                        <div class="form-group">#}
+{#                          <label class="col-sm-3 control-label">Digits</label>#}
+{#                          <div class="col-sm-9">#}
+{#                            <input type="text" data-type="digits" class="form-control" placeholder="digits">#}
+{#                          </div>#}
+{#                        </div>#}
+{#                        <div class="line line-dashed b-b line-lg pull-in"></div>#}
+{#                        <div class="form-group">#}
+{#                          <label class="col-sm-3 control-label">Number</label>#}
+{#                          <div class="col-sm-9">#}
+{#                            <input type="text" data-type="number" class="form-control" placeholder="number">#}
+{#                          </div>#}
+{#                        </div>#}
+{#                        <div class="line line-dashed b-b line-lg pull-in"></div>#}
+{#                        <div class="form-group">#}
+{#                          <label class="col-sm-3 control-label">Alphanum</label>#}
+{#                          <div class="col-sm-9">#}
+{#                            <input type="text" data-type="alphanum" class="form-control" placeholder="alphanumeric string">#}
+{#                          </div>#}
+{#                        </div>#}
+{#                        <div class="line line-dashed b-b line-lg pull-in"></div>#}
+{#                        <div class="form-group">#}
+{#                          <label class="col-sm-3 control-label">Date Iso</label>#}
+{#                          <div class="col-sm-9">#}
+{#                            <input type="text" data-type="dateIso" class="form-control" placeholder="YYYY-MM-DD">#}
+{#                          </div>#}
+{#                        </div>#}
+{#                        <div class="line line-dashed b-b line-lg pull-in"></div>#}
+{#                        <div class="form-group">#}
+{#                          <label class="col-sm-3 control-label">Phone</label>#}
+{#                          <div class="col-sm-9">#}
+{#                            <input type="text" data-type="phone" class="form-control" placeholder="(XXX) XXXX XXX">#}
+{#                          </div>#}
+{#                        </div>#}
+{#                        <div class="line line-dashed b-b line-lg pull-in"></div>#}
+{#                        <div class="form-group">#}
+{#                          <label class="col-sm-3 control-label">Min Words</label>#}
+{#                          <div class="col-sm-9">#}
+{#                            <input type="text" data-minwords="6" class="form-control" placeholder="min 6 words">#}
+{#                          </div>#}
+{#                        </div>#}
+{#                        <div class="line line-dashed b-b line-lg pull-in"></div>#}
+{#                        <div class="form-group">#}
+{#                          <label class="col-sm-3 control-label">Max Words</label>#}
+{#                          <div class="col-sm-9">#}
+{#                            <input type="text" data-maxwords="6" class="form-control" placeholder="max 6 words">#}
+{#                          </div>#}
+{#                        </div>#}
+{#                        <div class="line line-dashed b-b line-lg pull-in"></div>#}
+{#                        <div class="form-group">#}
+{#                          <label class="col-sm-3 control-label">Range Words</label>#}
+{#                          <div class="col-sm-9">#}
+{#                            <input type="text" data-rangewords="[6,10]" class="form-control" placeholder="min 6 words & max 10 words">#}
+{#                          </div>#}
+{#                        </div>#}
+{#                      </div>#}
+{#                      <footer class="panel-footer text-right bg-light lter">#}
+{#                        <button type="submit" class="btn btn-success btn-s-xs">Submit</button>#}
+{#                      </footer>#}
+{#                    </section>#}
+{#                  </form>#}
+{#                </div>#}
+{#              </div>#}
+            </section>
+          </section>
+          <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
+        </section>
+{% endblock %}

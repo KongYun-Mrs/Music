@@ -1,0 +1,118 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+    <section id="content">
+                <section class="vbox">
+                    <section class="scrollable padder">
+                        <div class="m-b-md">
+                            <h3 class="m-b-none">Form wizard</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <form id="wizardform" method="get" action="index.html">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <ul class="nav nav-tabs font-bold">
+                                                <li><a href="#step1" data-toggle="tab">Step 1</a>
+                                                </li>
+                                                <li><a href="#step2" data-toggle="tab">Step 2</a>
+                                                </li>
+                                                <li><a href="#step3" data-toggle="tab">Step 3</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>This twitter bootstrap plugin builds a wizard out of
+                                                a formatter tabbable structure. It allows to build a
+                                                wizard functionality using buttons to go through the
+                                                different wizard steps and using events allows to
+                                                hook into each step individually.</p>
+                                            <div class="line line-lg"></div>
+                                            <h4>Validate Form</h4>
+                                            <div class="progress progress-xs m-t-md">
+                                                <div class="progress-bar bg-success"></div>
+                                            </div>
+                                            <div class="tab-content">
+                                                <div class="tab-pane" id="step1">
+                                                    <p>Your website:</p>
+                                                    <input type="text" class="form-control"
+                                                           data-trigger="change"
+                                                           data-required="true" data-type="url"
+                                                           placeholder="website">
+                                                    <p class="m-t">Your email:</p>
+                                                    <input type="text" class="form-control"
+                                                           data-trigger="change"
+                                                           data-required="true" data-type="email"
+                                                           placeholder="email address">
+                                                </div>
+                                                <div class="tab-pane" id="step2">
+                                                    <p>Your email:</p>
+                                                    <input type="text" class="form-control"
+                                                           data-trigger="change"
+                                                           data-required="true" data-type="email"
+                                                           placeholder="email address">
+                                                </div>
+                                                <div class="tab-pane" id="step3">This is step 3
+                                                </div>
+                                                <ul class="pager wizard m-b-sm">
+                                                    <li class="previous first"
+                                                        style="display:none;"><a href="#">First</a>
+                                                    </li>
+                                                    <li class="previous"><a href="#">Previous</a>
+                                                    </li>
+                                                    <li class="next last" style="display:none;"><a
+                                                            href="#">Last</a></li>
+                                                    <li class="next"><a href="#">Next</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-sm-6">
+                                <form id="guessform">
+                                    <section class="panel panel-default">
+                                        <header class="panel-heading">
+                                            <ul class="nav nav-tabs pull-right">
+                                                <li><a href="#tab1" data-toggle="tab">Guess</a></li>
+                                                <li><a href="#tab2" data-toggle="tab">Result</a>
+                                                </li>
+                                            </ul>
+                                            <span class="font-bold">Guess Game</span>
+                                        </header>
+                                        <div class="panel-body">
+                                            <div class="tab-content">
+                                                <div class="tab-pane text-center" id="tab1">
+                                                    <p class="text-center h4 m-t m-b">Guess a number
+                                                        between 1 and 50!</p>
+                                                    <input type="text"
+                                                           class="no-border b-b input-s-sm h1 inline text-center text-success wrapper-lg"
+                                                           id="gn">
+                                                    <p class="text-center h4 m-t m-b text-danger"
+                                                       id="gi">.</p>
+                                                </div>
+                                                <div class="tab-pane text-center wrapper-xl"
+                                                     id="tab2">
+                                                    <h1 class="text-danger m-b-xl" id="answer"></h1>
+                                                    <h2 class="text-success m-b-xl">Correct!!</h2>
+                                                    <p class="h4">You guess <span id="count"></span>
+                                                        time(s), [<span id="num"></span> ]</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <footer class="panel-footer text-right bg-light lter">
+                                            <ul class="pager wizard m-n">
+                                                <li class="previous"><a href="#">Try again</a></li>
+                                                <li class="next"><a href="#">Guess</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <a href="#" class="hide nav-off-screen-block"
+                   data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
+            </section>
+{% endblock %}

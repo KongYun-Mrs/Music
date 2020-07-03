@@ -1,0 +1,217 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+    <!-- Page Inner -->
+    <div class="page-inner">
+        <div class="page-title">
+            <h3 class="breadcrumb-header">Progress Bars</h3>
+        </div>
+        <div id="main-wrapper">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">Basic Example</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Default progress bar.</p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger" role="progressbar"
+                                     aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                     style="width: 60%;">
+                                    <span class="sr-only">60% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">With Label</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Remove the <code>&lt;span&gt;</code> with <code>.sr-only</code> class
+                                from within the progress bar to show a visible percentage.</p>
+                            <div class="progress progress-md">
+                                <div class="progress-bar progress-bar-info" role="progressbar"
+                                     aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                     style="width: 70%;">
+                                    70%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">Animated</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Add <code>.active</code> to <code>.progress-bar-striped</code> to
+                                animate the stripes right to left. Not available in IE9 and below.
+                            </p>
+                            <div class="progress progress-md">
+                                <div class="progress-bar progress-bar-success progress-bar-striped active"
+                                     role="progressbar" aria-valuenow="45" aria-valuemin="0"
+                                     aria-valuemax="100" style="width: 45%">
+                                    <span class="sr-only">45% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">Stacked</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Place multiple bars into the same <code>.progress</code> to stack
+                                them.</p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" style="width: 35%">
+                                    <span class="sr-only">35% Complete (success)</span>
+                                </div>
+                                <div class="progress-bar progress-bar-warning progress-bar-striped"
+                                     style="width: 20%">
+                                    <span class="sr-only">20% Complete (warning)</span>
+                                </div>
+                                <div class="progress-bar progress-bar-danger" style="width: 10%">
+                                    <span class="sr-only">10% Complete (danger)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">Rounded</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>You can crate rounded progress bars by adding
+                                <code>.progress-rounded</code> class to <code>.progress</code></p>
+                            <div class="progress progress-rounded">
+                                <div class="progress-bar progress-bar-primary" style="width: 35%">
+                                    <span class="sr-only">35%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">Contextual Alternatives</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Progress bars use some of the same button and alert classes for
+                                consistent styles.</p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar"
+                                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                     style="width: 40%">
+                                    <span class="sr-only">40% Complete (success)</span>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info" role="progressbar"
+                                     aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                                     style="width: 20%">
+                                    <span class="sr-only">20% Complete</span>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning" role="progressbar"
+                                     aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                     style="width: 60%">
+                                    <span class="sr-only">60% Complete (warning)</span>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger" role="progressbar"
+                                     aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                     style="width: 80%">
+                                    <span class="sr-only">80% Complete (danger)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">Striped</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Uses a gradient to create a striped effect. Not available in IE8.</p>
+                            <div class="progress progress-md">
+                                <div class="progress-bar progress-bar-success progress-bar-striped"
+                                     role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                     aria-valuemax="100" style="width: 40%">
+                                    <span class="sr-only">40% Complete (success)</span>
+                                </div>
+                            </div>
+                            <div class="progress progress-md">
+                                <div class="progress-bar progress-bar-info progress-bar-striped"
+                                     role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                     aria-valuemax="100" style="width: 20%">
+                                    <span class="sr-only">20% Complete</span>
+                                </div>
+                            </div>
+                            <div class="progress progress-md">
+                                <div class="progress-bar progress-bar-warning progress-bar-striped"
+                                     role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                     aria-valuemax="100" style="width: 60%">
+                                    <span class="sr-only">60% Complete (warning)</span>
+                                </div>
+                            </div>
+                            <div class="progress progress-md">
+                                <div class="progress-bar progress-bar-danger progress-bar-striped"
+                                     role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                     aria-valuemax="100" style="width: 80%">
+                                    <span class="sr-only">80% Complete (danger)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-white">
+                        <div class="panel-heading clearfix">
+                            <h4 class="panel-title">Sizing</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>You can also change progress bar size easily by adding one of <code>.progress-sm</code>
+                                <code>.progress-md</code> <code>.progress-lg</code> classes to
+                                <code>.progress</code></p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar"
+                                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                     style="width: 40%">
+                                    <span class="sr-only">40% Complete (success)</span>
+                                </div>
+                            </div>
+                            <div class="progress progress-sm">
+                                <div class="progress-bar progress-bar-info" role="progressbar"
+                                     aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                                     style="width: 20%">
+                                    <span class="sr-only">20% Complete</span>
+                                </div>
+                            </div>
+                            <div class="progress progress-md">
+                                <div class="progress-bar progress-bar-warning" role="progressbar"
+                                     aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                     style="width: 60%">
+                                    <span class="sr-only">60% Complete (warning)</span>
+                                </div>
+                            </div>
+                            <div class="progress progress-lg">
+                                <div class="progress-bar progress-bar-danger" role="progressbar"
+                                     aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                     style="width: 80%">
+                                    <span class="sr-only">80% Complete (danger)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Row -->
+        </div><!-- Main Wrapper -->
+        <div class="page-footer">
+            <p>Copyright &copy; 2018.Company name All rights reserved.<a target="_blank"
+                                                                         href="http://www.17sucai.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+            </p>
+        </div>
+    </div><!-- /Page Inner -->
+{% endblock %}

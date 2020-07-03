@@ -1,0 +1,243 @@
+{% extends 'app/base.html' %}
+
+
+{% block link %}
+<style>
+    #btn  {
+        border-radius: 5%;
+    }
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</style>
+{% endblock %}
+
+
+{% block script %}
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+{% endblock %}
+
+
+
+{% block content %}
+
+
+
+    <section id="content">
+          <section class="vbox" id="bjax-el">
+            <section class="scrollable padder-lg">
+
+                {#轮播图#}
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="{{ static('app/images/1.jpg') }}" alt="...">
+                            <div class="carousel-caption">
+                                ...
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="{{ static('app/images/3.jpg') }}" alt="...">
+                            <div class="carousel-caption">
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="{{ static('app/images/2.jpg') }}" alt="...">
+                            <div class="carousel-caption">
+                                ...
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="{{ static('app/images/4.jpg') }}" alt="...">
+                            <div class="carousel-caption">
+                                ...
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true">&lt;</span>
+                    </a>
+
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true">&gt;</span>
+                    </a>
+                </div>
+                {#轮播图end#}
+
+
+
+              <h2 class="font-thin m-b"></h2>
+              <h3 class="font-thin m-b">今日免费</h3>
+                <div class="row row-sm">
+                <div class="col-xs-12 col-sm-4">
+                  <div class="item">
+                    <div class="pos-rlt">
+                      <div class="item-overlay opacity r r-2x bg-black">
+                        <div class="center text-center m-t-n">
+                          <a href="javascript:void(0)"><i class="fa fa-play-circle i-2x"></i></a>
+                        </div>
+                      </div>
+
+                        <div class="top">
+                        <span class="badge bg-dark m-l-sm m-t-sm">03:20</span>
+                        </div>
+
+                      <a href="javascript:void(0)"  ><img src="{{ static('app/images/m11.jpg') }}" alt="" class="r r-2x img-full"></a>
+
+{#                         <video controls autoplay="autoplay" controlslist="nodownload" style="width: 100%; height: auto;">#}
+{#                                        <source src="{{ mv.mv_url }}" type="video/mp4">#}
+{#                                    </video>#}
+                    </div>
+                    <div class="padder-v">
+                      <a href="javascript:void(0)" class="text-ellipsis">Tempered Song</a>
+                      <a href="javascript:void(0)" class="text-ellipsis text-xs text-muted">Miaow</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                  <div class="item">
+                    <div class="pos-rlt">
+                      <div class="item-overlay opacity r r-2x bg-black">
+                        <div class="center text-center m-t-n">
+                          <a href="javascript:void(0)"><i class="fa fa-play-circle i-2x"></i></a>
+                        </div>
+                      </div>
+                      <div class="top">
+                        <span class="badge bg-dark m-l-sm m-t-sm">02:10</span>
+                      </div>
+                      <a href="javascript:void(0)"><img src="{{ static('app/images/m12.jpg') }}" alt="" class="r r-2x img-full"></a>
+                    </div>
+                    <div class="padder-v">
+                      <a href="javascript:void(0)" class="text-ellipsis">Morbi id neque quam</a>
+                                Phasellus</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                  <div class="item">
+                    <div class="pos-rlt">
+                      <div class="item-overlay opacity r r-2x bg-black">
+                        <div class="center text-center m-t-n">
+                          <a href="javascript:void(0)"><i class="fa fa-play-circle i-2x"></i></a>
+                        </div>
+                      </div>
+                        <div class="top">
+                        <span class="badge bg-dark m-l-sm m-t-sm">05:40</span>
+                      </div>
+                      <a href="javascript:void(0)"><img src="{{ static('app/images/m13.jpg') }}" alt="" class="r r-2x img-full"></a>
+                    </div>
+                    <div class="padder-v">
+                      <a href="javascript:void(0)" class="text-ellipsis">Aliquam sollicitudin venenatis ipsum</a>
+                      <a href="javascript:void(0)" class="text-ellipsis text-xs text-muted">Malesuada</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <h3 class="font-thin m-b">付费歌曲</h3>
+              <div class="row row-sm">
+                  {% for m in pager.object_list %}
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                  <div class="item">
+                    <div class="pos-rlt">
+                      <div class="item-overlay opacity r r-2x bg-black">
+                        <div class="center text-center m-t-n">
+                          <a href="javascript:void(0)"><i class="fa fa-play-circle i-2x"></i></a>
+                        </div>
+                      </div>
+                        <a href="javascript:void(0)"><img src="{{ m.music_img }}" alt="" class="r r-2x img-full"></a>
+                    </div>
+                    <div class="padder-v">
+                        <span class="text-ellipsis text-xs text-muted" style="color: #9B5C4F " >歌曲: {{ m.music_name}}</span>
+                        <span class="text-ellipsis text-xs text-muted" style="color:  #9B5C4F">作者:{{ m.music_author }} </span>
+                        <form action="{{ url('app:rewards_points',args=(m.id,)) }}" method="post">
+                            <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+                          <span class="text-ellipsis text-xs text-muted"    naem="score"  style="color:  #9B5C4F ">积分:{{ m.score}}</span>
+                            <input   naem="score"  value="{{ m.score}}" type="hidden">
+                            <input  type="submit" value="积分兑换"  class="btn btn-info" style="font-size: 10px" height="20px">
+                        </form>
+                    </div>
+                  </div>
+                </div   >
+                  {% endfor %}
+                    {% if err %}
+                        <script>
+                        alert('用户积分不足')
+                        </script>
+                    {% endif %}
+              </div>
+
+                <div class="container">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            {# 上一页 #}
+                            <li {% if not pager.has_previous() %} class="disabled" {% else %} class="" {% endif %} >
+                                {% if pager.has_previous() %}
+                                    <a href="{{ url ('app:store1',args=(pager.previous_page_number(),)) }}"
+                                       aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                {% else %}
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                {% endif %}
+                            </li>
+
+                            {#   页码  page_range页码的列表,count分页对象的个数,num_pages总页数  number当前页码值#}
+                            {% for page in pager.page_range %}
+                                <li {% if pager.number==page %} class="active" {% else %}  class="" {% endif %}>
+                                    <a href="{{ url ('app:store1',args=(page,)) }}">{{ page }}</a>
+                                </li>
+                            {% endfor %}
+
+                            {# 下一页#}
+                            <li {% if pager.has_next() %} class=""  {% else %}  class="disabled" {% endif %} >
+                                {% if pager.has_next() %}
+                                    <a href="{{ url ('app:store1',args=(pager.next_page_number(),)) }}" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                {% else %}
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                {% endif %}
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+          </section>
+          <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
+        </section>
+
+
+{% endblock %}
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>

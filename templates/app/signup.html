@@ -1,0 +1,79 @@
+{% extends 'app/base.html' %}
+
+
+
+{% block link %}
+    <style>
+        .input-lg {
+            height: 35px;
+        }
+    </style>
+{% endblock %}
+
+{% block script %}
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+{% endblock %}
+
+{% block content %}
+    <section id="content" class="m-t-lg wrapper-md animated fadeInDown">
+    <div class="container aside-xl">
+      <a class="navbar-brand block" href="{{ url('app:index') }}"><span class="h1 font-bold">雷音乐</span></a>
+      <section class="m-b-lg">
+        <header class="wrapper text-center">
+          <strong>悦想生活季</strong>
+        </header>
+        <form action="{{ url('app:register') }}" method="post">
+         <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+          <div class="form-group">
+            <input placeholder="用户名" class="form-control rounded input-lg text-center no-border" name="username">
+              {% for err in  form_obj.username.errors %}
+                    <span>{{ err }}<span>
+               {% endfor %}
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="邮箱" class="form-control rounded input-lg text-center no-border" name="email">
+          </div>
+          <div class="form-group">
+             <input type="password" placeholder="密码"  class="form-control rounded input-lg text-center no-border" name="password">
+              {% for err in  form_obj.password.errors %}
+                    <span>{{ err }}<span>
+               {% endfor %}
+          </div>
+            <div class="form-group">
+             <input type="text" placeholder="手机号" class="form-control rounded input-lg text-center no-border" name="phone">
+          </div>
+
+          {% for err in  form_obj.phone.errors %}
+              <span>{{ err }}<span>
+          {% endfor %}
+
+            <div class="form-group">
+                <input type="text" placeholder="验证码" class="form-control rounded input-lg text-center no-border" name="code">
+                <img src="{{ url('app:get_verify_img') }}" alt="" onclick="this.src='{{ url('app:get_verify_img')  }}?'+Math.random()">
+            </div>
+
+            {% if msg %}
+                {{ msg }}
+            {% endif %}
+
+          <div class="checkbox i-checks m-b">
+            <label class="m-l">
+              <input type="checkbox" checked=""><i></i> Agree the <a href="#">terms and policy</a>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-lg btn-warning lt b-white b-2x btn-block btn-rounded"><i class="icon-arrow-right pull-right"></i><span class="m-r-n-lg">注册</span></button>
+          <div class="line line-dashed"></div>
+        </form>
+      </section>
+    </div>
+  </section>
+{% endblock %}
+
+
+{#<script>#}
+{#    $("#code").click(function () {#}
+{#        console.log("被执行了");#}
+{#        $(this).attr("src", "{{ url('app:get_verify_img') }}?" + Math.random());#}
+{#    })#}
+{#</script>#}
